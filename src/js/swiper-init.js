@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swipertt', {
+var swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

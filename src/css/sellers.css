@@ -1,0 +1,144 @@
+/* ============ SELLERS =========== */
+
+.sellers {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-dark-color);
+}
+
+.sellers-title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.sellers-title span {
+  color: var(--accent-color);
+}
+
+.sellers-list {
+  margin-bottom: 20px;
+}
+
+.sellers-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sellers-text {
+  max-width: 306px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.sellers-button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 100px;
+  font-weight: 600;
+  color: var(--text-white-color);
+  text-align: center;
+
+  transition: var(--transition-speed);
+}
+
+.sellers-button:is(:hover, :focus) {
+  color: var(--accent-color);
+  background-color: var(--btn-hover-color);
+}
+
+/* ++++++++++ Only Phone & Tablet ++++++++++ */
+
+@media screen and (max-width: 1199px) {
+  .sellers-list li:last-child {
+    display: none;
+  }
+}
+
+/* ++++++++++ Only Phone ++++++++++ */
+
+@media screen and (max-width: 767px) {
+  .sellers {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .sellers-list li:first-child {
+    margin-bottom: 32px;
+  }
+
+  .sellers-image-first {
+    margin-bottom: 20px;
+  }
+
+  .sellers-text-tab-desk {
+    display: none;
+  }
+
+  .sellers-button {
+    display: block;
+    min-width: 120px;
+    padding: 12px 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+/* ++++++++++ Tablet ++++++++++ */
+
+@media screen and (min-width: 768px) {
+  .sellers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .sellers-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .sellers-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .sellers-text-mobile {
+    display: none;
+  }
+
+  .wrap-sellers-txt-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sellers-button {
+    max-height: 50px;
+    min-width: 162px;
+    padding: 14px 40px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+/* ++++++++++ Desktop ++++++++++ */
+
+@media screen and (min-width: 1200px) {
+  .sellers {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .sellers-text {
+    max-width: 407px;
+  }
+}

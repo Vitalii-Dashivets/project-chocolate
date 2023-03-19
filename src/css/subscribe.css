@@ -58,6 +58,33 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/Subcribe-desk@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-container {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/Subcribe-desk@2x.jpg);
+    }
+  }
+}
+
 .subscribe-title {
   margin: 0 18px 24px 18px;
   font-weight: 600;

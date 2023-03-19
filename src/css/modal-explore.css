@@ -1,0 +1,163 @@
+.modal-explore-section {
+  font-family: 'Montserrat';
+  z-index: 21;
+  width: calc(100% - 32px);
+  max-width: 311px;
+  min-height: 169px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% 0%;
+
+  background-color: var(--background-color);
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-section {
+    max-width: 538px;
+    min-height: 412px;
+  }
+}
+
+.modal-explore-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-explore-close-btn {
+  position: absolute;
+  top: 15px;
+  left: 270px;
+
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-close-btn {
+    top: 24px;
+    left: 486px;
+  }
+}
+
+.modal-explore-close-icon {
+  stroke: var(--text-white-color);
+}
+
+.modal-explore-container {
+  padding: 32px 24px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-container {
+    padding: 40px;
+  }
+}
+
+.modal-explore-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-dark-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-title {
+    margin-bottom: 28px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
+.modal-explore-title-accent {
+  color: var(--accent-color);
+}
+
+.modal-explore-input-group {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-input-group {
+    position: static;
+
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.modal-explore-input {
+  padding: 14px 18px;
+  min-width: 263px;
+  height: 45px;
+
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+  color: var(--placeholder-color);
+
+  border-radius: 100px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-input {
+    padding: 15px 24px;
+    min-width: 313px;
+    height: 52px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    border-radius: 30px;
+  }
+}
+
+.modal-explore-input:not(:placeholder-shown):invalid {
+  border-color: red;
+  background-color: rgba(239, 116, 122, 0.4);
+}
+
+.modal-explore-input-btn {
+  position: absolute;
+  top: 0px;
+  left: 163px;
+
+  padding: 14px 22px;
+  min-width: 100px;
+  height: 45px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 100px;
+
+  transition: color var(--transition-speed),
+    background-color var(--transition-speed);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-input-btn {
+    position: static;
+
+    padding: 16px 42px;
+    min-width: 137px;
+    height: 52px;
+  }
+}
+
+.modal-explore-input-btn:focus,
+.modal-explore-input-btn:hover {
+  color: var(--accent-color);
+  background-color: var(--btn-hover-color);
+}

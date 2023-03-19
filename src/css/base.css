@@ -95,21 +95,24 @@ body {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 1000ms linear;
-
+  pointer-events: none;
   overflow-y: auto;
 }
 
 .modal.active {
   opacity: 1;
   scale: 1;
+  pointer-events: all;
 }
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .modal {
   transition: scale 500ms linear, opacity 500ms linear;
   scale: 0.4;
   opacity: 0;
+  pointer-events: none;
 }

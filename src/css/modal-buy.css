@@ -54,6 +54,7 @@
   translate: -50% 0%;
   border-radius: 15px;
   background-color: var(--background-color);
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .modal-buy {
@@ -95,6 +96,7 @@
 }
 .modal-buy-item {
   max-height: 364px;
+  width: 300px;
   padding: 0;
   background-color: inherit;
   /* width: 250px; */

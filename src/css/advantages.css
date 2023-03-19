@@ -1,0 +1,104 @@
+.section-advantages {
+    background-color: var(--footer-background-color);
+}
+
+.section-advantages.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.advantages-list {
+    max-width: 336px;
+}
+
+.advantages-list-item {
+    width: 100%;
+    min-height: 244px;
+    padding: 9px 28px 9px 0;
+}
+
+.advantages-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.advantages-svg {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+}
+
+.advantages-list-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    margin-bottom: 18px;
+    color: var(--text-white-color);
+}
+
+.advantages-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14 );
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+    .section-advantages.container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 704px;
+        row-gap: 41px;
+        column-gap: 60px;
+
+    }
+    .advantages-list-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .advantages-list-item {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .advantages-list {
+        flex-wrap: nowrap;
+        max-width: 1100px;
+        gap: 70px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .advantages-list-item {
+        flex-basis: calc((100% - 2 * 70px) / 3);
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-right: 18px;
+        position: relative;  
+    }
+    .advantages-list-item::after {
+        content: "";
+        width: 124px;
+        height: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        position: absolute;
+        transform: rotate(90deg);
+        top: 50%;
+        right: -60px;
+        }
+    .advantages-list-item:last-child::after {
+        display: none;
+    }
+
+
+}

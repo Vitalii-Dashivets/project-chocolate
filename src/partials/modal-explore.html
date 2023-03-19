@@ -1,0 +1,30 @@
+<div class="overlay js-overlay-modal"></div>
+<div class="modal-explore-section modal" data-modal="5">
+    <picture>
+        <source srcset="../img/popup-tab-desk1@1x.jpg 1x, ../img/popup-tab-desk1@2x.jpg 2x" width="538px" height="196px"
+            media="(min-width: 768px)">
+        <source srcset="../img/popup-mob1@1x.jpg 1x, ../img/popup-mob1@2x.jpg 2x" width="311px" height="169px"
+            media="(max-width: 767px)">
+        <img class="modal-explore-img" src="../img/popup-mob1@1x.jpg" alt="Photo chocolate" width="311" height="169" />
+    </picture>
+    <button class="modal-explore-close-btn js-modal-close" type="button">
+        <svg class="modal-explore-close-icon" width="24" height="24">
+            <use href="../img/icons.svg#x"></use>
+        </svg>
+    </button>
+    <div class="modal-explore-container">
+        <h2 class="modal-explore-title">Explore our <br><span class="modal-explore-title-accent">new
+                chocolate</span>
+            first!
+        </h2>
+        <form name="subscribe_form">
+            <label for="user_subscribe"></label>
+            <div class="modal-explore-input-group">
+                <input class="modal-explore-input" name="user_subscribe" id="user_subscribe" type="email" required
+                    minlength="6" maxlength="50" placeholder="Enter your email" pattern="[^@\s]+@[^@\s]+"
+                    title="Invalid email address">
+                <button class="modal-explore-input-btn js-open-modal" type="submit" data-modal="2">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

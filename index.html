@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/project-chocolate/assets/index-8a3bc904.js"></script>
-    <link rel="stylesheet" href="/project-chocolate/assets/index-97970dbb.css">
+    <link rel="stylesheet" href="/project-chocolate/assets/index-922552f1.css">
   </head>
   <body>
     
@@ -387,7 +387,20 @@
 
 
       
-      
+      <section class="subscribe-section">
+    <div class="subscribe-container container">
+        <h2 class="subscribe-title">Explore our new chocolate first</h2>
+        <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+            indulgence that
+            will leave
+            you
+            craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a
+            work
+            of art
+            that is sure to please.</p>
+        <button class="subscribe-btn js-open-modal" type="button" data-modal="5">Subscribe</button>
+    </div>
+</section>
     </main>
     <footer class="footer" id="footer">
   <div class="container">
@@ -636,7 +649,36 @@
     
     
     
-    
+    <div class="overlay js-overlay-modal"></div>
+<div class="modal-explore-section modal" data-modal="5">
+    <picture>
+        <source srcset="/project-chocolate/assets/popup-tab-desk1@1x-b09ffb4e.jpg 1x, /project-chocolate/assets/popup-tab-desk1@2x-6fe4fbd3.jpg 2x" width="538px" height="196px"
+            media="(min-width: 768px)">
+        <source srcset="/project-chocolate/assets/popup-mob1@1x-b7993e12.jpg 1x, /project-chocolate/assets/popup-mob1@2x-f0b9b6d9.jpg 2x" width="311px" height="169px"
+            media="(max-width: 767px)">
+        <img class="modal-explore-img" src="/project-chocolate/assets/popup-mob1@1x-b7993e12.jpg" alt="Photo chocolate" width="311" height="169" />
+    </picture>
+    <button class="modal-explore-close-btn js-modal-close" type="button">
+        <svg class="modal-explore-close-icon" width="24" height="24">
+            <use href="/project-chocolate/assets/icons-6196f2aa.svg#x"></use>
+        </svg>
+    </button>
+    <div class="modal-explore-container">
+        <h2 class="modal-explore-title">Explore our <br><span class="modal-explore-title-accent">new
+                chocolate</span>
+            first!
+        </h2>
+        <form name="subscribe_form">
+            <label for="user_subscribe"></label>
+            <div class="modal-explore-input-group">
+                <input class="modal-explore-input" name="user_subscribe" id="user_subscribe" type="email" required
+                    minlength="6" maxlength="50" placeholder="Enter your email" pattern="[^@\s]+@[^@\s]+"
+                    title="Invalid email address">
+                <button class="modal-explore-input-btn js-open-modal" type="submit" data-modal="2">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

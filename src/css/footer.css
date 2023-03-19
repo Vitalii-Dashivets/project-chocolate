@@ -1,0 +1,157 @@
+footer {
+    background-color: var(--footer-background-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-white-color);
+}
+
+.slogan {
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+}
+
+.slogan-accent {
+    color: var(--accent-color);
+}
+
+.wrap-contact-net-menu {
+    display: flex;
+}
+
+.footer-txt {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+address a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+address li:first-child {
+    margin-bottom: 4px;
+}
+
+.footer-net-menu {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-icon {
+    width: 22px;
+    height: 22px;
+    fill: transparent;
+    stroke: var(--text-white-color);
+}
+
+.wrap-second-part-footer::before {
+    display: block;
+    margin-bottom: 32px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-menu {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+/* +++++++++++ Only Phone ++++++++++++ */
+
+@media screen and (max-width: 767px) {
+    .slogan {
+        margin-bottom: 32px;
+    }
+
+    .wrap-contact-net-menu {
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    .footer-menu-item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+/* +++++++++++ Tablet ++++++++++++ */
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .wrap-first-part-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .slogan {
+        font-size: 28px;
+        line-height: 1.21;
+    }
+
+    .wrap-contact-net-menu {
+        gap: 50px;
+    }
+
+    .footer-net-menu {
+        gap: 18px;
+    }
+
+    .footer-icon {
+        width: 24px;
+        height: 24px;
+        transition: stroke var(--transition-speed);
+    }
+
+    .footer-link-net-menu:hover .footer-icon,
+    .footer-link-net-menu:focus .footer-icon {
+        stroke: var(--accent-color);
+    }
+
+    .wrap-second-part-footer::before {
+        margin-bottom: 24px;
+    }
+
+    .footer-menu {
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-menu a {
+        transition: var(--transition-speed);
+    }
+
+    .footer-menu a:hover,
+    .footer-menu a:focus {
+        font-weight: 600;
+        color: var(--accent-color);
+    }
+}
+
+/* +++++++++++ Desktop ++++++++++++ */
+
+@media screen and (min-width: 1200px) {
+    .wrap-first-part-footer {
+            margin-bottom: 58px;
+        }
+
+    .wrap-contact-net-menu {
+        gap: 63px;
+    }
+}

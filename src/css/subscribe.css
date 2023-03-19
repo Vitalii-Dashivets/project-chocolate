@@ -76,6 +76,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-title {
+    margin: 0 379px 24px 379px;
+  }
+}
+
 .subscribe-text {
   margin: 0 5px 24px 5px;
   font-size: 14px;
@@ -87,6 +93,12 @@
 @media screen and (min-width: 768px) {
   .subscribe-text {
     margin: 0 118px 24px 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-text {
+    margin: 0 335px 24px 335px;
   }
 }
 

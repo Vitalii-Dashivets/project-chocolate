@@ -1,0 +1,115 @@
+.modal_thanks {
+  position: fixed;
+  z-index: 802;
+  display: flex;
+  max-width: 311px;
+  height: 350px;
+  width: calc(100% - 32px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--accent-color);
+  border-color: black;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.thanks-close-button {
+  display: flex;
+  background-color: var(--btn-hover-color);
+  border: none;
+  margin-left: auto;
+  position: absolute;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+.thanks-close-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke: rgba(212, 69, 40, 1);
+  background-color: inherit;
+}
+
+.form-thanks {
+  padding: 84px 24px 170px 68px;
+}
+.form-thanks-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--btn-hover-color);
+  margin-bottom: 8px;
+  width: 229px;
+}
+
+.form-thanks-text {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--text-white-color);
+}
+.pop-up {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.pop-up img {
+  display: block;
+  /* width: 296px; */
+  /* height: 399px; */
+}
+
+/* ----------------------------------------TABLET!!!!!------------------------------ */
+@media screen and (min-width: 768px) {
+  .modal_thanks {
+    max-width: 516px;
+    height: 414px;
+  }
+
+  .thanks-close-button {
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    right: 24px;
+  }
+  .thanks-close-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .form-thanks {
+    padding: 154px 44px 154px 163px;
+  }
+
+  .form-thanks-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .form-thanks-text span {
+    font-size: 24px;
+    line-height: 1;
+  }
+  .pop-up img {
+    width: 100%;
+  }
+}

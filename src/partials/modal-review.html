@@ -1,0 +1,80 @@
+<div class="overlay js-overlay-modal"></div>
+<div class="modal_review modal" data-modal="3">
+  <button class="modal-close-button js-modal-close" type="button">
+    <svg class="modal-close-icon" width="12" height="12">
+      <use href="/img/icons.svg#x"></use>
+    </svg>
+  </button>
+
+  <form class="form-review">
+    <b class="form-review-title"
+      ><span class="leave-span">leave a review </span>about
+      <span class="choko-span"> our chocolate</span></b
+    >
+
+    <div class="form-review-contacts">
+      <input
+        class="form-input-contacts"
+        type="text"
+        name="name"
+        placeholder="Name"
+        pattern="[a-z]{3,16}"
+        title="Surname 3-20 characters"
+        minlength="3"
+        maxlength="20"
+        required
+      />
+
+      <input
+        id="email"
+        class="form-input-contacts"
+        type="email"
+        name="email"
+        required
+        minlength="6"
+        maxlength="50"
+        placeholder="Enter your email"
+        pattern="[^@\s]+@[^@\s]+"
+        title="Invalid email address"
+      />
+
+      <span class="form-phone">
+        <input
+          class="form-input-contacts"
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="[0-9]{9}"
+          placeholder="Phone number"
+          title="Nine digits code"
+          required
+          maxlength="9"
+        />
+        <b>
+          <svg class="phone-flag">
+            <use href="/img/icons.svg#flag"></use>
+          </svg>
+          <span class="phone-code">+380</span>
+        </b>
+      </span>
+
+      <div class="form-field-comments">
+        <!-- <label for="comment" class="form-label-comments">Comment</label> -->
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+          class="textarea-comments"
+        ></textarea>
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="form-send-btn js-open-modal js-modal-close"
+      data-modal="4"
+    >
+      Send
+    </button>
+  </form>
+</div>

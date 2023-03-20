@@ -138,7 +138,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  transform: translatey(100%);
+  transform: translatey(102%);
   background-color: var(--text-white-color);
   padding: 28px;
   border-radius: 15px;

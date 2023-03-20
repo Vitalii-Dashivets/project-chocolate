@@ -229,7 +229,7 @@ html {
   .hero-text {
     font-size: 14px;
     line-height: calc(18 / 14);
-    margin-left: 151px;
+    margin-left: auto;
     margin-top: 0;
   }
 
@@ -291,12 +291,8 @@ html {
     line-height: calc(34 / 28);
   }
 
-  .hero-btns {
-  }
-
   .hero-text {
     font-size: 14px;
     line-height: calc(18 / 14);
-    margin-left: 583px;
   }
 }

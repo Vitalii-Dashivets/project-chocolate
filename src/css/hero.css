@@ -31,7 +31,7 @@ html {
   }
 }
 
-.hero-main-title {
+.hero-title {
   width: 290px;
   font-family: Montserrat;
   font-weight: 500;
@@ -148,7 +148,7 @@ html {
 }
 
 @media screen and (max-width: 340px) {
-  .hero-main-title {
+  .hero-title {
     width: 235px;
   }
 }
@@ -216,7 +216,7 @@ html {
     }
   }
 
-  .hero-main-title {
+  .hero-title {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -281,7 +281,7 @@ html {
     }
   }
 
-  .hero-main-title {
+  .hero-title {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -87,17 +87,18 @@
   margin: 0;
   margin-bottom: 0px;
   margin-bottom: 44px;
+  column-gap: 0px;
 }
 @media screen and (min-width: 768px) {
   .modal-buy-list {
-    display: flex;
+    /* display: flex; */
 
     column-gap: 16px;
   }
 }
 .modal-buy-item {
   max-height: 364px;
-  width: 300px;
+  width: 100%;
   padding: 0;
   background-color: inherit;
   /* width: 250px; */

@@ -43,19 +43,15 @@
 } */
 
 .modal-buy {
-  z-index: 22;
+  visibility: hidden;
   width: calc(100% - 32px);
   max-width: 311px;
-  min-height: 1007px;
-  position: absolute;
-  top: 5%;
-  left: 50%;
+  max-height: 95vh;
   opacity: 0;
   padding: 32px 24px;
-  translate: -50% 0%;
   border-radius: 15px;
   background-color: var(--background-color);
-  /* overflow: hidden; */
+  overflow-y: auto;
 }
 @media screen and (min-width: 768px) {
   .modal-buy {

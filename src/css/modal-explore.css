@@ -1,14 +1,11 @@
 .modal-explore-section {
   font-family: 'Montserrat';
-  z-index: 21;
+  visibility: hidden;
   width: calc(100% - 32px);
   max-width: 311px;
   min-height: 169px;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% 0%;
+  opacity: 0;
+  overflow-y: auto;
 
   background-color: var(--background-color);
   border-radius: 15px;
@@ -28,7 +25,7 @@
 .modal-explore-close-btn {
   position: absolute;
   top: 15px;
-  left: 264px;
+  right: 20px;
 
   width: 24px;
   height: 24px;

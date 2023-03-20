@@ -1,0 +1,185 @@
+/* Swiper */
+.reviews .swiper-wrapper {
+  border-radius: 15px;
+}
+
+.reviews .swiper-pagination {
+  position: static;
+}
+
+.reviews .swiper-slide {
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.reviews .swiper-pagination-bullet {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  color: #000000;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  background: var(--bullet-color);
+  opacity: 1;
+}
+
+.reviews .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap);
+}
+
+.reviews .swiper-pagination-bullet-active {
+  width: 28px;
+  color: #ffffff;
+  background: var(--accent-color);
+  border-radius: 6.5px;
+}
+
+/* Content */
+.reviews {
+  padding: 72px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews {
+    padding: 128px 0;
+  }
+}
+
+.reviews .container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews .container {
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews .container {
+    gap: 50px;
+  }
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    line-height: 1.17;
+  }
+}
+
+.reviews-title-accent {
+  color: var(--accent-color);
+}
+
+.reviews-list {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-list {
+    padding-bottom: 32px;
+  }
+}
+
+.reviews-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 335px;
+  min-height: 200px;
+  margin: 42px 16px 0 0;
+  padding: 58px 18px 18px;
+  background: #ffffff;
+  border: 1px solid rgb(17 17 17 / 10%);
+  border-radius: 15px;
+  box-shadow: 0 9px 26px rgb(215 228 249 / 25%);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-item {
+    max-width: 344px;
+    padding: 58px 16px 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-item {
+    max-width: 360px;
+    margin-right: 28px;
+    padding: 58px 24px 24px;
+  }
+}
+
+.reviews-foto {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews-subtitle {
+  margin-bottom: 24px;
+  color: var(--text-dark-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.reviews-text {
+  color: rgb(17 17 17 / 70%);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.reviews-btn {
+  display: block;
+  margin: auto;
+  padding: 14px 40px;
+  color: var(--text-dark-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+  transition:
+    background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-btn {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.reviews-btn:is(:hover, :focus) {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+}

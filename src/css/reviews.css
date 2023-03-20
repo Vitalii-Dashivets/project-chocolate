@@ -1,16 +1,16 @@
 .reviews {
-  padding: 72px 0;
+  padding-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding: 100px 0;
+    padding-bottom: 100px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .reviews {
-    padding: 128px 0;
+    padding-bottom: 128px 0;
   }
 }
 
@@ -92,6 +92,10 @@
   }
 }
 
+.reviews-item blockquote {
+  margin:0;
+}
+
 .reviews-foto {
   position: absolute;
   top: 0;
@@ -100,12 +104,14 @@
 }
 
 .reviews-subtitle {
+  display: block;
   margin-bottom: 24px;
   color: var(--text-dark-color);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  font-style: normal;
 }
 
 .reviews-text {

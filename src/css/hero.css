@@ -1,4 +1,6 @@
------Hero-mobile----- html {
+/* -----Hero-mobile----- */
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -292,6 +294,5 @@
   .hero-text {
     font-size: 14px;
     line-height: calc(18 / 14);
-    margin-left: 583px;
   }
 }

@@ -102,6 +102,7 @@ body {
 .modal.active {
   opacity: 1;
   scale: 1;
+  visibility: visible;
   overflow-y: auto;
   pointer-events: all;
 }
@@ -117,4 +118,5 @@ body {
   opacity: 0;
   overflow-y: auto;
   pointer-events: none;
+  visibility: hidden;
 }

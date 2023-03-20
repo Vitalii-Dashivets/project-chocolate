@@ -107,6 +107,7 @@
 
 .unique-img {
   width: 224px;
+  height: 171px;
 }
 
 .unique-item:first-child {
@@ -232,6 +233,7 @@
 
   .unique-img {
     width: 206px;
+    height: 160px;
   }
 
   .unique-items {

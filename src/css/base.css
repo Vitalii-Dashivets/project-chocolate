@@ -102,17 +102,19 @@ body {
 .modal.active {
   opacity: 1;
   scale: 1;
+  overflow-y: auto;
   pointer-events: all;
 }
 .overlay.active {
   opacity: 1;
   visibility: visible;
-  pointer-events: all;
+  overflow-y: auto;
 }
 
 .modal {
   transition: scale 500ms linear, opacity 500ms linear;
   scale: 0.4;
   opacity: 0;
+  overflow-y: auto;
   pointer-events: none;
 }

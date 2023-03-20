@@ -1,202 +1,204 @@
 <div class="overlay js-overlay-modal"></div>
-<div class="modal modal-buy" data-modal="1">
-  <button class="modal-close-button js-modal-close" type="button">
-    <svg class="modal-close-icon" width="12" height="12">
-      <use href="./img/icons.svg#x"></use>
-    </svg>
-  </button>
-  <p class="modal-buy-title">BUY<span> NOW</span></p>
-  <div class="swiper">
-    <ul class="swiper-wrapper modal-buy-list">
-      <li class="swiper-slide modal-buy-item">
-        <div class="modal-buy-card">
-          <div class="modal-buy-thumb">
-            <picture>
-              <source
-                srcset="
-                  ./img/modal-tab-1@1x.png 1x,
-                  ./img/modal-tab-1@2x.png 2x
-                "
-                media="(min-width: 768px)"
-                width="120"
-              />
-              <source
-                srcset="
-                  ./img/modal-mob-1@1x.png 1x,
-                  ./img/modal-mob-1@2x.png 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/modal-mob-1@1x.png"
-                alt="Скибки шоколаду"
-                width="167"
-              />
-            </picture>
-          </div>
-          <span class="modal-weight">100 g</span>
-        </div>
-      </li>
-      <li class="swiper-slide modal-buy-item">
-        <div class="modal-buy-card">
-          <div class="modal-buy-thumb">
-            <picture>
-              <source
-                srcset="
-                  ./img/modal-tab-2@1x.png 1x,
-                  ./img/modal-tab-2@2x.png 2x
-                "
-                media="(min-width: 768px)"
-                width="120"
-              />
-              <source
-                srcset="
-                  ./img/modal-mob-2@1x.png 1x,
-                  ./img/modal-mob-2@2x.png 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/modal-mob-2@1x.png"
-                alt="Скибки чорного і білого шоколаду"
-                width="167"
-              />
-            </picture>
-          </div>
-
-          <span class="modal-weight">200 g</span>
-        </div>
-      </li>
-      <li class="swiper-slide modal-buy-item">
-        <div class="modal-buy-card">
-          <div class="modal-buy-thumb">
-            <picture>
-              <source
-                srcset="
-                  ./img/modal-tab-3@1x.png 1x,
-                  ./img/modal-tab-3@2x.png 2x
-                "
-                media="(min-width: 768px)"
-                width="120"
-              />
-              <source
-                srcset="
-                  ./img/modal-mob-3@1x.png 1x,
-                  ./img/modal-mob-3@2x.png 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/modal-mob-3@1x.png"
-                alt="Дві плитки чорного шоколаду"
-                width="167"
-              />
-            </picture>
-          </div>
-
-          <span class="modal-weight">300 g</span>
-        </div>
-      </li>
-    </ul>
-    <div class="swiper-pagination"></div>
-  </div>
-  <form name="signup_form" autocomplete="on">
-    <label for="Name" class="modal-buy-label">
-      <span>Personal information</span>
-    </label>
-    <span class="modal-buy-name">
-      <input
-        id="Name"
-        class="modal-buy-input"
-        type="text"
-        placeholder="Name"
-        pattern="[a-z]{3,16}"
-        title="Surname 3-20 characters"
-        minlength="3"
-        maxlength="20"
-        required
-      />
-
-      <!-- <label for="Surname" class="modal-buy-label"></label> -->
-      <input
-        id="Surname"
-        class="modal-buy-input"
-        type="text"
-        placeholder="Surname"
-        pattern="[a-z]{3,16}"
-        title="Surname 3-20 characters"
-        minlength="3"
-        maxlength="20"
-        required
-      />
-    </span>
-    <label for="mail" class="modal-buy-label"><span>Email</span></label>
-    <input
-      id="mail"
-      class="modal-buy-input"
-      type="email"
-      required
-      minlength="6"
-      maxlength="50"
-      placeholder="Enter your email"
-      pattern="[^@\s]+@[^@\s]+"
-      title="Invalid email address"
-    />
-    <label class="modal-buy-label" for="phone">
-      <span> Phone number</span></label
-    >
-    <span class="modal-buy-box">
-      <input
-        class="modal-buy-input"
-        id="phone"
-        type="tel"
-        pattern="[0-9]{9}"
-        placeholder="Phone number"
-        title="Nine digits code"
-        required
-        maxlength="9"
-      />
-      <b>
-        <svg class="modal-buy-flag" width="24" height="24">
-          <use href="./img/icons.svg#flag"></use>
-        </svg>
-        <span class="modal-buy-code">+380</span>
-      </b>
-    </span>
-    <label class="modal-buy-label" for="bank">
-      <span>Card number</span>
-    </label>
-    <span class="modal-buy-box-bank">
-      <input
-        id="bank"
-        class="modal-buy-input"
-        type="text"
-        pattern="[0-9]{16}"
-        title="Sixteen digits code"
-        placeholder="Enter card"
-        maxlength="16"
-        required
-      />
-      <svg class="modal-buy-bank-icon" width="32" height="21">
-        <use href="./img/icons.svg#mastercard"></use>
+  <div class="modal modal-buy" data-modal="1">
+    <button class="modal-close-button js-modal-close" type="button" >
+      <svg class="modal-close-icon" width="12" height="12">
+        <use href="./img/icons.svg#x"></use>
       </svg>
-    </span>
-    <label for="comment" class="modal-buy-label">
-      <span>Comment</span>
-      <textarea
-        id="comment"
-        class="modal-buy-textarea"
-        name="comment"
-        placeholder="Enter text"
-      ></textarea>
-    </label>
-
-    <button
-      class="modal-buy-submit js-open-modal js-modal-close"
-      type="submit"
-      data-modal="2"
-    >
-      Submit
     </button>
-  </form>
+    <p class="modal-buy-title">BUY<span> NOW</span></p>
+    <div class="swiper">
+      <ul class="swiper-wrapper modal-buy-list">
+        <li class="swiper-slide modal-buy-item">
+          <div class="modal-buy-card">
+            <div class="modal-buy-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./img/modal-tab-1@1x.png 1x,
+                    ./img/modal-tab-1@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="120"
+                />
+                <source
+                  srcset="
+                    ./img/modal-mob-1@1x.png 1x,
+                    ./img/modal-mob-1@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/modal-mob-1@1x.png"
+                  alt="Скибки шоколаду"
+                  width="167"
+                />
+              </picture>
+            </div>
+            <span class="modal-weight">100 g</span>
+          </div>
+        </li>
+        <li class="swiper-slide modal-buy-item">
+          <div class="modal-buy-card">
+            <div class="modal-buy-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./img/modal-tab-2@1x.png 1x,
+                    ./img/modal-tab-2@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="120"
+                />
+                <source
+                  srcset="
+                    ./img/modal-mob-2@1x.png 1x,
+                    ./img/modal-mob-2@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/modal-mob-2@1x.png"
+                  alt="Скибки чорного і білого шоколаду"
+                  width="167"
+                />
+              </picture>
+            </div>
+
+            <span class="modal-weight">200 g</span>
+          </div>
+        </li>
+        <li class="swiper-slide modal-buy-item">
+          <div class="modal-buy-card">
+            <div class="modal-buy-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./img/modal-tab-3@1x.png 1x,
+                    ./img/modal-tab-3@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="120"
+                />
+                <source
+                  srcset="
+                    ./img/modal-mob-3@1x.png 1x,
+                    ./img/modal-mob-3@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/modal-mob-3@1x.png"
+                  alt="Дві плитки чорного шоколаду"
+                  width="167"
+                />
+              </picture>
+            </div>
+
+            <span class="modal-weight">300 g</span>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+    <form name="signup_form" autocomplete="on">
+      <label for="Name" class="modal-buy-label">
+        <span>Personal information</span>
+      </label>
+      <span class="modal-buy-name">
+        <input
+          id="Name"
+          class="modal-buy-input"
+          type="text"
+          placeholder="Name"
+          pattern="[A-Za-zА-Яа-яЁё]{3,16}"
+          title="Surname 3-20 characters"
+          minlength="3"
+          maxlength="20"
+          required
+        />
+
+        <!-- <label for="Surname" class="modal-buy-label"></label> -->
+        <input
+          id="Surname"
+          class="modal-buy-input"
+          type="text"
+          placeholder="Surname"
+          pattern="[A-Za-zА-Яа-яЁё]{3,16}"
+          title="Surname 3-20 characters"
+          minlength="3"
+          maxlength="20"
+          required
+        />
+      </span>
+      <label for="mail" class="modal-buy-label"><span>Email</span></label>
+      <input
+        id="mail"
+        class="modal-buy-input"
+        type="email"
+        required
+        minlength="6"
+        maxlength="50"
+        placeholder="Enter your email"
+        pattern="[^@\s]+@[^@\s]+"
+        title="Invalid email address"
+      />
+      <label class="modal-buy-label" for="phone">
+        <span> Phone number</span></label
+      >
+      <span class="modal-buy-box">
+        <input
+          class="modal-buy-input"
+          id="phone"
+          type="tel"
+          pattern="[0-9]{9}"
+          placeholder="Phone number"
+          title="Nine digits code"
+          required
+          maxlength="9"
+        />
+        <b>
+          <svg class="modal-buy-flag" width="24" height="24">
+            <use href="./img/icons.svg#flag"></use>
+          </svg>
+          <span class="modal-buy-code">+380</span>
+        </b>
+      </span>
+      <label class="modal-buy-label" for="bank">
+        <span>Card number</span>
+      </label>
+      <span class="modal-buy-box-bank">
+        <input
+          id="bank"
+          class="modal-buy-input"
+          type="text"
+          pattern="[0-9]{16}"
+          title="Sixteen digits code"
+          placeholder="Enter card"
+          maxlength="16"
+          required
+        />
+        <svg class="modal-buy-bank-icon" width="32" height="21">
+          <use href="./img/icons.svg#mastercard"></use>
+        </svg>
+      </span>
+      <label for="comment" class="modal-buy-label">
+        <span>Comment</span>
+        <textarea
+          id="comment"
+          class="modal-buy-textarea"
+          name="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+
+      <button
+        class="modal-buy-submit js-open-modal js-modal-close"
+        type="submit"
+        data-modal-close
+        data-modal="2"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
 </div>

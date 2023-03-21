@@ -18,7 +18,7 @@ html {
   padding-right: 20px;
   height: 621px;
   border-radius: 30px;
-  background-image: url('/img/hero-mob@1x-min.jpg');
+  background-image: url('../img/hero-mob@1x-min.png');
   background-size: cover;
   background-position: center;
 }
@@ -27,7 +27,7 @@ html {
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .background {
-    background-image: url('/img/hero-mob@2x-min.jpg');
+    background-image: url('/img/hero-mob@2x-min.png');
   }
 }
 
@@ -205,14 +205,14 @@ html {
     padding-left: 40px;
     padding-right: 40px;
     height: 890px;
-    background-image: url('/img/hero-tab@1x-min.jpg');
+    background-image: url('/img/hero-tab@1x-min.png');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .background {
-      background-image: url('/img/hero-tab@2x-min.jpg');
+      background-image: url('/img/hero-tab@2x-min.png');
     }
   }
 
@@ -270,14 +270,14 @@ html {
 
   .background {
     height: 600px;
-    background-image: url('/img/hero-desk@1x-min.jpg');
+    background-image: url('/img/hero-desk@1x-min.png');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .background {
-      background-image: url('/img/hero-desk@2x-min.jpg');
+      background-image: url('/img/hero-desk@2x-min.png');
     }
   }
 

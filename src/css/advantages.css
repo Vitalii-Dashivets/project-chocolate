@@ -2,7 +2,7 @@
     background-color: var(--footer-background-color);
 }
 
-.section-advantages.container {
+.container-advantages {
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -51,7 +51,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .section-advantages.container {
+    .container-advantages {
         padding-top: 50px;
         padding-bottom: 50px;
     }

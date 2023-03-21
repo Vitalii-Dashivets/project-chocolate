@@ -121,7 +121,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.22;
-  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-contacts:is(:hover, :focus),
+.textarea-comments:is(:hover, :focus) {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .form-input-contacts:not(:placeholder-shown):invalid {
@@ -169,7 +174,7 @@
   border-right: 1px solid var(--border-color);
 }
 
-.textarea-comment::placeholder {
+.textarea-comments::placeholder {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -262,7 +267,7 @@
     padding: 22px 24px;
     height: 66px;
   }
-  .textarea-comment::placeholder,
+  .textarea-comments::placeholder,
   .form-input-contacts::placeholder {
     font-size: 18px;
     line-height: 1.2;
@@ -298,4 +303,15 @@
   }
 }
 /* ------------------------DESkTOP---------------------------------- */
-/* Not need)))) */
+
+@media screen and (min-width: 1200px) {
+  .form-input-contacts {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .form-input-contacts:is(:hover, :focus),
+  .textarea-comments:is(:hover, :focus) {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+}

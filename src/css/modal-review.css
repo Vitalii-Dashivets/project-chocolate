@@ -174,14 +174,7 @@
   border-right: 1px solid var(--border-color);
 }
 
-.textarea-comments::placeholder {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.22;
-  color: var(--placeholder-color);
-}
+.textarea-comments::placeholder,
 .form-input-contacts::placeholder {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;

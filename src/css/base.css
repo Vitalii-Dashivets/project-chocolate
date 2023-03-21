@@ -9,7 +9,7 @@
   --placeholder-color: rgba(64, 64, 64, 0.3);
   --bullet-color: rgba(17, 17, 17, 0.1);
   --btn-hover-color: rgba(252, 241, 224, 1);
-  --transition-speed: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-speed: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   --swiper-pagination-bullet-horizontal-gap: 6.5px;
   --about-bg-color-item: rgba(76, 76, 76, 1);
   --background-light-color: rgba(255, 255, 255, 1);
@@ -127,6 +127,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
+  transition: var(--transition-speed);
   /* overflow: auto; */
 }
 .modal.active,

@@ -204,12 +204,18 @@
   font-size: 14px;
   line-height: 1.22;
   letter-spacing: -0.02em;
-  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .modal-buy-input {
     font-size: 18px;
     line-height: 1.22;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-buy-input:is(:hover, :focus) {
+    border-color: var(--accent-color);
+    outline: none;
   }
 }
 
@@ -338,6 +344,13 @@
 @media screen and (min-width: 768px) {
   .modal-buy-textarea {
     height: 137px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-buy-textarea:is(:hover, :focus) {
+    border-color: var(--accent-color);
+    outline: none;
   }
 }
 .modal-buy-textarea::placeholder {

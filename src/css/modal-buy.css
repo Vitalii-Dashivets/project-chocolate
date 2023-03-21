@@ -382,3 +382,8 @@
   color: var(--accent-color);
   background-color: var(--btn-hover-color);
 }
+@media screen and (min-width: 768px) {
+  .modal-buy-submit {
+    padding: 14px 40px;
+  }
+}

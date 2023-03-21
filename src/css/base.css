@@ -96,30 +96,7 @@ body {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 1000ms linear;
-  /* pointer-events: none; */
-  /* overflow-y: auto; */
 }
-/* .modal.active {
-  opacity: 1;
-  scale: 1;
-  visibility: visible;
-
-}
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-  
-} */
-
-/* .modal {
-  position: fixed;
-  z-index: 30;
-  transition: scale 500ms linear, opacity 500ms linear;
-  scale: 0.4;
-  top: 50%;
-  left: 50%;
-  
-}  */
 
 .modal {
   position: fixed;
@@ -128,7 +105,6 @@ body {
   transform: translate(-50%, -50%);
   z-index: 30;
   transition: var(--transition-speed);
-  /* overflow: auto; */
 }
 .modal.active,
 .overlay.active {

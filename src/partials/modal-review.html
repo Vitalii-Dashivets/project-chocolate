@@ -13,8 +13,10 @@
     >
 
     <div class="form-review-contacts">
+      <label class="visually-hidden" for="name-review">Name</label>
       <input
         class="form-input-contacts"
+        id="name-review"
         type="text"
         name="name"
         placeholder="Name"
@@ -24,9 +26,9 @@
         maxlength="20"
         required
       />
-
+      <label class="visually-hidden" for="email-review">Email</label>
       <input
-        id="email"
+        id="email-review"
         class="form-input-contacts"
         type="email"
         name="email"
@@ -39,11 +41,12 @@
       />
 
       <span class="form-phone">
+        <label class="visually-hidden" for="phone-review">Phone</label>
         <input
           class="form-input-contacts"
           type="tel"
           name="phone"
-          id="phone"
+          id="phone-review"
           pattern="[0-9]{9}"
           placeholder="Phone number"
           title="Nine digits code"
@@ -60,9 +63,10 @@
 
       <div class="form-field-comments">
         <!-- <label for="comment" class="form-label-comments">Comment</label> -->
+        <label class="visually-hidden" for="comment-review">Comments</label>
         <textarea
           name="comment"
-          id="comment"
+          id="comment-review"
           placeholder="Enter text"
           class="textarea-comments"
         ></textarea>

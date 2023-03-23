@@ -98,7 +98,7 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: -0.02em;
-  color: var(--placeholder-color);
+  color: var(--text-dark-color);
 
   border-radius: 100px;
   border: 1.5px solid var(--border-color);
@@ -125,6 +125,20 @@
   .modal-explore-input:is(:hover, :focus) {
     border-color: var(--accent-color);
     outline: none;
+  }
+}
+
+.modal-explore-input::placeholder {
+  font-size: 14px;
+  line-height: 1.22;
+  color: var(--placeholder-color);
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 

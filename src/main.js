@@ -1,7 +1,7 @@
  import "./js/mobile-menu.js"
 import "./js/modal.js"
 import "./js/swiper-init.js"
-import "./js/scroll.js"
+// import "./js/scroll.js"
 // import "./js/modal-hidden.js"
 //  import "./js/swiper.js"
 // import "./js/swiper-bandle.js"

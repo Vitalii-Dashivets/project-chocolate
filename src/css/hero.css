@@ -150,8 +150,9 @@
   height: 38px;
   padding: 0;
   border-radius: 50%;
-  background-color: var(--background-light-color);
+  background-color: var(--accent-color);
   transition: background-color var(--transition-speed);
+  z-index: 1000;
 }
 
 .go-top-icon {
@@ -162,7 +163,7 @@
 
 .go-top:hover,
 .go-top:focus {
-  background-color: var(--accent-color);
+  background-color: var(--btn-hover-color);
   transition: background-color var(--transition-speed);
 }
 

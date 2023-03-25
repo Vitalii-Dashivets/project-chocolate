@@ -105,11 +105,6 @@
     background-color var(--transition-speed);
 }
 
-.unique-img {
-  width: 224px;
-  height: 171px;
-}
-
 .unique-item:first-child {
   background-color: var(--accent-color);
 }
@@ -229,11 +224,6 @@
 
   .unique-item {
     padding: 28px 36px 82px 28px;
-  }
-
-  .unique-img {
-    width: 206px;
-    height: 160px;
   }
 
   .unique-items {

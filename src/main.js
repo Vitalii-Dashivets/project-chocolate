@@ -2,6 +2,7 @@
 import "./js/modal.js"
 import "./js/swiper-init.js"
 import "./js/scroll.js"
+import "/js/scroll-up-btn.js"
 // import "./js/modal-hidden.js"
 //  import "./js/swiper.js"
 // import "./js/swiper-bandle.js"

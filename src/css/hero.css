@@ -139,6 +139,44 @@
   align-items: center;
 }
 
+.go-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+  transform: rotate(180deg);
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--background-light-color);
+  transition: background-color var(--transition-speed);
+}
+
+.go-top-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--btn-hover-color);
+}
+
+.go-top:hover,
+.go-top:focus {
+  background-color: var(--accent-color);
+  transition: background-color var(--transition-speed);
+}
+
+.go-top:hover .go-top-icon,
+.go-top:focus .go-top-icon {
+  color: var(--text-white-color);
+}
+
+.go-top--show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-text {
   margin-top: 32px;
 }

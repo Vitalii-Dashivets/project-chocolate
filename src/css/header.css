@@ -1,3 +1,10 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 30;
+}
 .header-logo-link {
     font-family: 'Montserrat';
     text-transform: uppercase;
@@ -118,6 +125,7 @@
   }
   .header-menu-social-icon {
     stroke: var(--text-white-color);
+    fill: transparent;
   }
   .header-button-humburger,.header-menu-button {
     width: 28px;
@@ -134,6 +142,18 @@
 .header-logo-icon {
     width: 21px;
     height: 21px;
+    animation: animateRotate 4000ms infinite 1000ms;
+}
+@keyframes animateRotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0);
+  } 
 }
  /* -----------TABLET------------------------------ */
   @media screen and (min-width: 768px) {

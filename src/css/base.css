@@ -26,6 +26,7 @@ html {
 body {
   background-color: var(--background-color);
   font-family: 'Montserrat', sans-serif;
+  padding-top: 62px;
 }
 .container {
   max-width: 375px;
@@ -39,6 +40,9 @@ body {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  body {
+    padding-top: 84px;
   }
 }
 @media screen and (min-width: 1200px) {

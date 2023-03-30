@@ -142,18 +142,18 @@
 .header-logo-icon {
     width: 21px;
     height: 21px;
-    animation: animateRotate 4000ms infinite 1000ms;
+    animation: animateRotate 8000ms infinite 8000ms;
 }
 @keyframes animateRotate {
   0% {
-    transform: rotate(0);
+    transform: rotateY(0);
   }
   50% {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
-  100%{
-    transform: rotate(0);
-  } 
+  100% {
+    transform: rotateY(0);
+  }
 }
  /* -----------TABLET------------------------------ */
   @media screen and (min-width: 768px) {
